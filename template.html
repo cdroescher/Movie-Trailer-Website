@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Information</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="search">
+    <form method="post">
+        <input name="name">
+        <button id="button">add movie</button>
+        <h2 {% if not error %} style="display:none" {% endif %} >not found</h2>
+    </form>
+</div>
+<div id="content">
+    {% for movie in movie_list %}
+    <div class="movie">
+        <h2>{{ movie.title }}</h2>
+        <img src="{{ movie.image }}">
+        <p>{{ movie.storyline }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
