@@ -2,7 +2,7 @@ The website shows information like title, storyline and poster image of a given 
 It allows you to dynamically add movies to the website by a given movie title.
 The Information will automatically retrieved via webservice.
 
-The Movie Website project is part of the _Python programming foundations_ course.
+The _Movie Website Project_ is part of the _Programming Foundations With Python_ course.
 
 ## Dependencies
 
@@ -17,4 +17,4 @@ Go to the folder where the project files are located and run:
 ```
 python main.py
 ```
-After that you can open the url http://localhost:8000 in a web browser and add movies through the input field.
+After that you can open [http://localhost:8000](http://localhost:8000) in a web browser and add movies through the input field.
