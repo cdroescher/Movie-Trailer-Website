@@ -13,7 +13,7 @@ class MovieConnector:
 
     def get_movie_information(self, title):
         # Gets back a json object which contains information for given title.
-        substituted_string = self.template.substitute(movie_name=title)
+        substituted_string = self.template.substitute(movie_name=title)  # substitute movie title for the URL
         response = urllib.urlopen(substituted_string)
         logging.info(response)
         return json.load(response)
